@@ -1,7 +1,11 @@
 pipeline {
    agent {
      stages {
-        script {
+        stage ('Practice')  {
+           
+          steps {
+      
+           script {
            def services = [ "payment-service",
                           "order-service",
                           "user-service",
