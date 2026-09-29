@@ -16,6 +16,7 @@ pipeline {
 for (service in services) {
  for(environment in environments) {
    if(environment == "Production"){
+      echo "deploying $service to $environment" 
       echo "${environment } requires approval"
       continue
 
