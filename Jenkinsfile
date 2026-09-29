@@ -18,9 +18,11 @@ for (service in services) {
     
    
    if(environment == "Production"){
-      echo "deploying $service to $environment" 
+   
       echo "${environment } requires approval"
       continue
+   }
+      echo "deploying $service to $environment" 
 
 
 }
